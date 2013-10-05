@@ -1,3 +1,10 @@
+" Purpose: Vim global plugin for giving a smoothed effect to C^D and C^U
+" Author:  Kazark <kazark@zoho.com>
+" License: No warranty or guarantee of any kind that it will work as intended
+" and will not have harmful or annoying behavior or side effects. That said,
+" use, copy, distribute, modify however you like if you find it that useful,
+" which you probably won't.
+
 if !exists('g:SimpleSmoothScroll')
     let g:SimpleSmoothScroll=1
 
