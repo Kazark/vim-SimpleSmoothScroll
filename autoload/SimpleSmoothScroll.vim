@@ -10,6 +10,9 @@ if exists('g:loaded_SimpleSmoothScroll')
 endif
 let g:loaded_SimpleSmoothScroll=1
 
+let s:save_cpo = &cpo
+set cpo&vim
+
 function SimpleSmoothScroll#init()
     nnoremap <C-U> :call <SID>ScrollUp()<Enter>
     nnoremap <C-D> :call <SID>ScrollDown()<Enter>
@@ -36,3 +39,5 @@ function s:ScrollWithAction(scrollaction)
         execute "norm " . a:scrollaction
     endwhile
 endfunction
+
+let &cpo = s:save_cpo
