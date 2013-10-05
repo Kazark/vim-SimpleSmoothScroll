@@ -9,11 +9,11 @@ if !exists('g:SimpleSmoothScroll')
     endfunction
 
     function SimpleSmoothScroll#ScrollUp()
-        ScrollWithAction("")
+        call SimpleSmoothScroll#ScrollWithAction("")
     endfunction
 
     function SimpleSmoothScroll#ScrollDown()
-        ScrollWithAction("")
+        call SimpleSmoothScroll#ScrollWithAction("")
     endfunction
 
     function SimpleSmoothScroll#ScrollWithAction(scrollaction)
