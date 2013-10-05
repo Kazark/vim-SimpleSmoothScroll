@@ -11,17 +11,17 @@ endif
 let g:loaded_SimpleSmoothScroll=1
 
 function SimpleSmoothScroll#init()
-    nnoremap <C-U> :call SimpleSmoothScroll#ScrollUp()<Enter>
-    nnoremap <C-D> :call SimpleSmoothScroll#ScrollDown()<Enter>
-    inoremap <C-U> <Esc>:call SimpleSmoothScroll#ScrollUp()<Enter>i
-    inoremap <C-D> <Esc>:call SimpleSmoothScroll#ScrollDown()<Enter>i
+    nnoremap <C-U> :call <SID>ScrollUp()<Enter>
+    nnoremap <C-D> :call <SID>ScrollDown()<Enter>
+    inoremap <C-U> <Esc>:call <SID>ScrollUp()<Enter>i
+    inoremap <C-D> <Esc>:call <SID>ScrollDown()<Enter>i
 endfunction
 
-function SimpleSmoothScroll#ScrollUp()
+function s:ScrollUp()
     call s:ScrollWithAction("")
 endfunction
 
-function SimpleSmoothScroll#ScrollDown()
+function s:ScrollDown()
     call s:ScrollWithAction("")
 endfunction
 
