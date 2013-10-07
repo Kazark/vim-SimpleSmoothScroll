@@ -5,7 +5,7 @@ code files in a legacy code base and I was having trouble keeping track of
 where I was in all the spaghetti. The smooth scroll action gave me a better
 sense of my own navigation.
 
-I originally published this code [on StackOverflow](http://stackexchange.com/users/443137/kazark?tab=accounts).
+I originally published this code [on StackOverflow](http://stackoverflow.com/a/12201974/834176).
 The current version has been fixed up some in an attempt to be a little more
 readable and conform to the guidelines put forth in `:help write-script`.
 
