@@ -1,3 +1,8 @@
+### Description
+
+SimpleSmoothScroll is a simple Vim global plugin for giving a smoothed effect
+to <kbd>Ctrl</kbd>-<kbd>D</kbd> and <kbd>Ctrl</kbd>-<kbd>U</kbd>.
+
 ### Rationale
 
 I originally created this script for myself when I was looking through large
