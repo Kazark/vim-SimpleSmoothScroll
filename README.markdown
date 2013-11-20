@@ -37,3 +37,15 @@ I've found that you shouldn't push <kbd>Ctrl</kbd>-<kbd>D</kbd> or
 <kbd>Ctrl</kbd>-<kbd>U</kbd> until the previous scroll has finished, or the
 behavior is somewhat unpredictable. I have mostly experienced this problem when
 dealing with very large files over a painfully slow network connection.
+
+### Installation
+
+I recommend installing [pathogen.vim](https://github.com/tpope/vim-pathogen),
+and then executing:
+
+    cd ~/.vim/bundle
+    git clone https://github.com/Kazark/vim-SimpleSmoothScroll.git
+
+or the equivalent. Alternatively, you can copy `plugin/SimpleSmoothScroll.vim`
+to `~/.vim/plugin`. (Note: you may have to use `~\vimfiles` instead of
+`~/.vim` if you are on Windows...)
