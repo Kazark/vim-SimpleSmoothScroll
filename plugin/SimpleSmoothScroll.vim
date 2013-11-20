@@ -5,20 +5,13 @@
 " use, copy, distribute, modify however you like if you find it that useful,
 " which you probably won't.
 
-if exists('g:loaded_SimpleSmoothScroll')
+if exists('g:loaded_SimpleSmoothScroll_plugin')
     finish
 endif
-let g:loaded_SimpleSmoothScroll=1
+let g:loaded_SimpleSmoothScroll_plugin=1
 
 let s:save_cpo = &cpo
 set cpo&vim
-
-function SimpleSmoothScroll#init()
-    nnoremap <C-U> :call <SID>ScrollUp()<Enter>
-    nnoremap <C-D> :call <SID>ScrollDown()<Enter>
-    inoremap <C-U> <Esc>:call <SID>ScrollUp()<Enter>i
-    inoremap <C-D> <Esc>:call <SID>ScrollDown()<Enter>i
-endfunction
 
 function s:ScrollUp()
     call s:ScrollWithAction("")
@@ -39,5 +32,10 @@ function s:ScrollWithAction(scrollaction)
         execute "norm " . a:scrollaction
     endwhile
 endfunction
+
+nnoremap <C-U> :call <SID>ScrollUp()<Enter>
+nnoremap <C-D> :call <SID>ScrollDown()<Enter>
+inoremap <C-U> <Esc>:call <SID>ScrollUp()<Enter>i
+inoremap <C-D> <Esc>:call <SID>ScrollDown()<Enter>i
 
 let &cpo = s:save_cpo
