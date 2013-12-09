@@ -37,5 +37,7 @@ nnoremap <C-U> :call <SID>ScrollUp()<Enter>
 nnoremap <C-D> :call <SID>ScrollDown()<Enter>
 inoremap <C-U> <Esc>:call <SID>ScrollUp()<Enter>i
 inoremap <C-D> <Esc>:call <SID>ScrollDown()<Enter>i
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 
 let &cpo = s:save_cpo
