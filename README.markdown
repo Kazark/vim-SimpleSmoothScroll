@@ -23,6 +23,8 @@ this.
 ### Features
 
 + Scroll on the basis of the Vim `scroll` option.
++ If you set the mouse option for some modes, you can scroll with the mouse
+  wheel in those modes.
 + Manually customizable scrolling speed (adjust the `sleep` command's time
   argument; I use ten milliseconds). *Note*: just like slowing down the frame
   rate on a video, if you slow down the smooth scroll too much it will be jerky
