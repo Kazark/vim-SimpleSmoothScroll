@@ -58,6 +58,6 @@ you would like to have scroll working as normal mode, add the lines below to
 your vimrc file.
 
 ```
-noremap <C-U> <Esc><C-U>i
-noremap <C-D> <Esc><C-D>i
+inoremap <C-U> <Esc><C-U>i
+inoremap <C-D> <Esc><C-D>i
 ```
