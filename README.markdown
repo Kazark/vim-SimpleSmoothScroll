@@ -29,7 +29,6 @@ this.
   argument; I use ten milliseconds). *Note*: just like slowing down the frame
   rate on a video, if you slow down the smooth scroll too much it will be jerky
   scroll.
-+ Works in normal or insert mode (i.e. leaves you in insert mode if you were
   already in insert mode)
 + Simple and lightweight
 
@@ -51,3 +50,14 @@ and then executing:
 or the equivalent. Alternatively, you can copy `plugin/SimpleSmoothScroll.vim`
 to `~/.vim/plugin`. (Note: you may have to use `~\vimfiles` instead of
 `~/.vim` if you are on Windows...)
+
+### Insert mode
+
+By default <C-D> and <C-U> have different purposes in insert mode. However if
+you would like to have scroll working as normal mode, add the lines below to
+your vimrc file.
+
+```
+inoremap <C-U> <Esc><C-U>i
+inoremap <C-D> <Esc><C-D>i
+```
