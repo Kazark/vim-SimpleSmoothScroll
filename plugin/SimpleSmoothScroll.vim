@@ -10,6 +10,10 @@ if exists('g:loaded_SimpleSmoothScroll_plugin')
 endif
 let g:loaded_SimpleSmoothScroll_plugin=1
 
+if !exists('g:SimpleSmoothScrollDelay')
+    let g:SimpleSmoothScrollDelay=10
+endif
+
 let s:save_cpo = &cpo
 set cpo&vim
 
@@ -27,7 +31,7 @@ function s:ScrollWithAction(scrollaction)
     let counter=1
     while counter<&scroll
         let counter+=1
-        sleep 10m
+        execute "sleep ".g:SimpleSmoothScrollDelay."m"
         redraw
         execute "norm " . a:scrollaction
     endwhile
